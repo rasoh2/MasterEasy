@@ -497,13 +497,13 @@ img {
 }
 
 /* Material Design Input Fields with Floating Labels */
-.input-group {
+.md-input-group {
   position: relative;
   margin-bottom: 24px;
 }
 
-.input-group input,
-.input-group select {
+.md-input-group input,
+.md-input-group select {
   width: 100%;
   padding: 12px 0;
   border: none;
@@ -516,7 +516,7 @@ img {
   transition: border-color var(--transition-md);
 }
 
-.input-group label {
+.md-input-group label {
   position: absolute;
   left: 0;
   top: 12px;
@@ -530,15 +530,15 @@ img {
 }
 
 /* Floating Label Effects */
-.input-group input:focus ~ label,
-.input-group input:not(:placeholder-shown) ~ label {
+.md-input-group input:focus ~ label,
+.md-input-group input:not(:placeholder-shown) ~ label {
   transform: translateY(-20px);
   font-size: 0.75rem;
   color: var(--color-primary-light);
   font-weight: 600;
 }
 
-.input-group input:focus {
+.md-input-group input:focus {
   border-bottom-color: var(--color-primary-light);
 }
 
@@ -553,8 +553,8 @@ img {
   transition: transform var(--transition-md);
 }
 
-.input-group input:focus ~ .input-line,
-.input-group select:focus ~ .input-line {
+.md-input-group input:focus ~ .input-line,
+.md-input-group select:focus ~ .input-line {
   transform: scaleX(1);
 }
 
@@ -590,12 +590,12 @@ img {
 }
 
 /* Error States */
-.input-group.error input,
-.input-group.error select {
+.md-input-group.error input,
+.md-input-group.error select {
   border-bottom-color: #e53e3e;
 }
 
-.input-group.error label {
+.md-input-group.error label {
   color: #e53e3e;
 }
 
@@ -607,7 +607,7 @@ img {
   font-weight: 500;
 }
 
-.input-group.error .error-msg {
+.md-input-group.error .error-msg {
   display: block;
 }
 

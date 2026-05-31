@@ -243,7 +243,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const validateField = (input, validatorFunc, errorGroup) => {
     const isValid = validatorFunc(input.value);
-    const group = input.closest(".input-group");
+    const group = input.closest(".md-input-group");
 
     if (!isValid) {
       group.classList.add("error");
@@ -274,7 +274,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Remover clase de error mientras se escribe
   const removeErrorOnInput = (input) => {
     input.addEventListener("input", () => {
-      const group = input.closest(".input-group");
+      const group = input.closest(".md-input-group");
       group.classList.remove("error");
     });
   };
@@ -343,7 +343,7 @@ document.addEventListener("DOMContentLoaded", () => {
           submitBtn.querySelector("span").textContent = originalText;
 
           // Limpiar clases de error si quedaron
-          document.querySelectorAll(".input-group").forEach((grp) => {
+          document.querySelectorAll(".md-input-group").forEach((grp) => {
             grp.classList.remove("error");
           });
         })
@@ -365,7 +365,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Hacer foco en el primer elemento con error
       const firstError = document.querySelector(
-        ".input-group.error input, .input-group.error select",
+        ".md-input-group.error input, .md-input-group.error select",
       );
       if (firstError) firstError.focus();
     }
