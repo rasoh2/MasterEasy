@@ -313,8 +313,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const formData = {
         access_key: accessKey,
-        subject: "Nuevo Lead: Solicitud de Inspección Técnica - InduSan",
-        from_name: "InduSan Landing Web",
+        subject: "Nuevo Lead: Solicitud de Inspección Técnica - Master Easy Chile",
+        from_name: "Master Easy Chile Landing Web",
         Nombre: nameInput.value,
         Empresa: companyInput.value,
         Correo: emailInput.value,
