@@ -17,7 +17,7 @@ Este proyecto ha sido desarrollado como parte de la **Evaluación Sumativa 1 del
 
 ## 🌟 Características Principales
 1. **Diseño Responsivo:** Adaptable a todo tipo de dispositivos (Escritorio, Tablet y Smartphones).
-2. **Formulario de Contacto Interactivo:** Validaciones visuales y de accesibilidad integradas.
+2. **Formulario de Contacto Funcional:** Validaciones en tiempo real (JavaScript) e integración directa con **Web3Forms** para enviar datos de clientes directamente al nuevo correo oficial de la página, operando de manera 100% funcional.
 3. **Accesibilidad Web (a11y):** Uso correcto de etiquetas ARIA y alto contraste de color.
 4. **Optimización SEO Básica:** Contiene meta etiquetas relevantes y Open Graph para redes sociales.
 
