@@ -58,15 +58,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let isDragging = false;
 
-    // Ajustar el ancho de la imagen interna al redimensionar la ventana
-    const resizeImage = () => {
-      const width = sliderElement.offsetWidth;
-      beforeImage.style.width = `${width}px`;
-    };
-
-    window.addEventListener("resize", resizeImage);
-    // Inicializar el tamaño de la imagen interna
-    setTimeout(resizeImage, 100);
+    // Ajustar el ancho de la imagen interna cuando cambia el tamaño del slider (incluyendo carga inicial y cambios de pestañas)
+    const resizeObserver = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        const width = entry.contentRect.width;
+        if (width > 0) {
+          beforeImage.style.width = `${width}px`;
+        }
+      }
+    });
+    resizeObserver.observe(sliderElement);
 
     const moveSlider = (clientX) => {
       const rect = sliderElement.getBoundingClientRect();
